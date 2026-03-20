@@ -1,12 +1,14 @@
-# 1. Variables: Storing information
-user_name = "AYUSH"
-coding_goal = "Build something cool"
+# A List of tasks
+tasks = ["Email the dev team", "Review PRs", "Update roadmap", "Sprint planning"]
 
-# 2. Logic: The 'if' statement
-if coding_goal == "Build something cool":
-    status = "on the right track"
-else:
-    status = "still exploring"
+print("--- MY TO-DO LIST ---")
 
-# 3. Output: Printing a formatted message
-print(f"Hello {user_name}! You are {status} to {coding_goal.lower()}.")
+# A Loop to print each task with its length
+for task in tasks:
+    # len() counts the characters in a string
+    task_length = len(task)
+    print(f"Task: {task} ({task_length} characters)")
+
+# Adding a new task to the list
+tasks.append("Go to the gym")
+print(f"\nTotal tasks now: {len(tasks)}")
