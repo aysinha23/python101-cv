@@ -1,14 +1,11 @@
-# A List of tasks
-tasks = ["Email the dev team", "Review PRs", "Update roadmap", "Sprint planning"]
+backlog = ["Fix Login Bug", "Update UI", "API Bug - critical", "Database Cleanup", "Write Docs"]
 
-print("--- MY TO-DO LIST ---")
+bug_count = 0  # Using a descriptive name instead of 'x' helps others understand your code
 
-# A Loop to print each task with its length
-for task in tasks:
-    # len() counts the characters in a string
-    task_length = len(task)
-    print(f"Task: {task} ({task_length} characters)")
+for task in backlog:
+    if "Bug" in task:
+        print(f"🔴 Found a bug: {task}")
+        bug_count += 1 
 
-# Adding a new task to the list
-tasks.append("Go to the gym")
-print(f"\nTotal tasks now: {len(tasks)}")
+print(f"\n--- SUMMARY ---")
+print(f"Total tasks with Bugs: {bug_count}")
