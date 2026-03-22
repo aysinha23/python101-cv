@@ -9,3 +9,5 @@ for task in backlog:
 
 print(f"\n--- SUMMARY ---")
 print(f"Total tasks with Bugs: {bug_count}")
+
+#Day 2 - Starting dictionaries
