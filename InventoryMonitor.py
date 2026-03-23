@@ -1,4 +1,4 @@
-# The "Source of Truth" for our test
+# Random Inventory Levels
 inventory_data = """Item,Status,Count,Category
 Organic Bananas,In Stock,450,Produce
 Oat Milk,Low Stock,12,Dairy
@@ -16,7 +16,7 @@ print("✅ warehouse_inventory.csv created with 6 items.")
 import csv
 import requests
 
-# 1. PASTE YOUR WEBHOOK HERE
+# 1. PASTE WEBHOOK HERE
 SLACK_WEBHOOK_URL = "XYZ" 
 
 def send_slack_alert1(item_name, category):
@@ -33,7 +33,7 @@ def send_slack_alert2(item_name, category):
 
 LOW_STOCK_THRESHOLD = 20
 
-# 2. The Processing Loop
+# 2. The Processing Loop to call function based on inventory levels
 with open("warehouse_inventory.csv", "r") as file:
     reader = csv.DictReader(file)
     for row in reader:
