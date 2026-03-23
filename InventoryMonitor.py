@@ -17,7 +17,7 @@ import csv
 import requests
 
 # 1. PASTE YOUR WEBHOOK HERE
-SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
+SLACK_WEBHOOK_URL = "XYZ" 
 
 def send_slack_alert1(item_name, category):
     payload = {
