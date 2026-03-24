@@ -14,7 +14,7 @@ with open("warehouse_inventory.csv", "w") as file:
 print("✅ warehouse_inventory.csv created with 6 items.")
 
 # 1. PASTE WEBHOOK HERE
-SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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" 
+SLACK_WEBHOOK_URL = "XYZ" 
 
 def send_slack_alert1(item_name, category):
     payload = {
